@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		/*.red{
+			color: red;
+		}*/
+		/*decendent*/
+		.demo p{
+			color: purple;
+		}
+		/*child selector*/
+		.demo>p{
+			background-color:peachpuff ;
+		}
+		/*adject selector*/
+		.demo+h2{
+			color: darkred;
+			background-color: yellow;
+		}
+			/*general selector*/
+			.demo~h2{
+				color:orangered;
+			}
+
+		
+	</style>
+
+</head>
+<body>
+	<!-- <h1>combinator selectors</h1>
+	<div class="red">
+	<p> descendent</p>
+	<span>child</span>
+	<h7>adject</h7>
+	<p>general</p>
+</div> -->
+<section class="demo">
+	<p>this is about descendant selector</p>
+	<p>this is para one child to section</p>
+	<p>this is para two child to section</p>
+	<div>
+		<h1>this is h1 grand child to section and child to div</h1>
+		<p>this is grand child to section and child to div</p>
+	</div>
+	<p>this is para three child to section</p>
+	<p>child selector</p>
+</section>
+<h2>adject selector it appilies only one element right after it</h2>
+<h2>general selector</h2>
+<h2>it appies all the elements right after it</h2>
+</body>
+</html>
